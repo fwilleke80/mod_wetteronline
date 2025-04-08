@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+    <name>MOD_WETTERONLINE</name>
+    <author>Frank Willeke</author>
+    <version>1.0.2</version>
+    <creationDate>8. April 2025</creationDate>
+    <copyright>(C) 2025 Frank Willeke</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorUrl>www.frankwilleke.com</authorUrl>
+    <authorEmail>joomla-plugins@frankwilleke.de</authorEmail>
+    <description>MOD_WETTERONLINE_DESC</description>
+    <files>
+        <filename module="mod_wetteronline">mod_wetteronline.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_wetteronline.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_wetteronline.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_wetteronline.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_wetteronline.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="MOD_WETTERONLINE_OPTIONS">
+                <field 
+                    name="location" 
+                    type="text" 
+                    default="Berlin" 
+                    label="MOD_WETTERONLINE_FIELD_LOCATION_LABEL" 
+                    description="MOD_WETTERONLINE_FIELD_LOCATION_DESC" />
+                <field 
+                    name="width" 
+                    type="list" 
+                    default="100%" 
+                    label="MOD_WETTERONLINE_FIELD_WIDTH_LABEL" 
+                    description="MOD_WETTERONLINE_FIELD_WIDTH_DESC">
+                    <option value="100%">MOD_WETTERONLINE_OPTION_WIDTH_100</option>
+                    <option value="300px">MOD_WETTERONLINE_OPTION_WIDTH_300</option>
+                </field>
+                <field 
+                    name="height" 
+                    type="list" 
+                    default="150px" 
+                    label="MOD_WETTERONLINE_FIELD_HEIGHT_LABEL" 
+                    description="MOD_WETTERONLINE_FIELD_HEIGHT_DESC">
+                    <option value="100px">MOD_WETTERONLINE_OPTION_HEIGHT_100</option>
+                    <option value="120px">MOD_WETTERONLINE_OPTION_HEIGHT_120</option>
+                    <option value="150px">MOD_WETTERONLINE_OPTION_HEIGHT_150</option>
+                    <option value="200px">MOD_WETTERONLINE_OPTION_HEIGHT_200</option>
+                    <option value="255px">MOD_WETTERONLINE_OPTION_HEIGHT_255</option>
+                    <option value="310px">MOD_WETTERONLINE_OPTION_HEIGHT_310</option>
+                    <option value="365px">MOD_WETTERONLINE_OPTION_HEIGHT_365</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" name="Web Links Update Site">https://raw.githubusercontent.com/joomla-extensions/weblinks/master/manifest.xml</server>
+    </updateservers>
+</extension>
