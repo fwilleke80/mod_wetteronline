@@ -2,7 +2,7 @@
 <extension type="module" version="5.0" client="site" method="upgrade">
     <name>MOD_WETTERONLINE</name>
     <author>Frank Willeke</author>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
     <creationDate>8. April 2025</creationDate>
     <copyright>(C) 2025 Frank Willeke</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
@@ -33,6 +33,8 @@
                     default="10382" 
                     label="MOD_WETTERONLINE_FIELD_GID_LABEL" 
                     description="MOD_WETTERONLINE_FIELD_GID_DESC" />
+            </fieldset>
+            <fieldset name="style" label="MOD_WETTERONLINE_OPTIONS_STYLE">
                 <field 
                     name="width" 
                     type="list" 
@@ -56,6 +58,12 @@
                     <option value="310px">MOD_WETTERONLINE_OPTION_HEIGHT_310</option>
                     <option value="365px">MOD_WETTERONLINE_OPTION_HEIGHT_365</option>
                 </field>
+                <field 
+                    name="widgetstyle" 
+                    type="text" 
+                    default="border:1px solid;border-radius:10px;border-color:transparent;" 
+                    label="MOD_WETTERONLINE_FIELD_STYLE_LABEL" 
+                    description="MOD_WETTERONLINE_FIELD_STYLE_DESC" />
                 <field 
                     name="showcredits" 
                     type="checkbox" 
