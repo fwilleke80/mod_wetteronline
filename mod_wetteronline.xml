@@ -2,7 +2,7 @@
 <extension type="module" version="5.0" client="site" method="upgrade">
     <name>MOD_WETTERONLINE</name>
     <author>Frank Willeke</author>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <creationDate>8. April 2025</creationDate>
     <copyright>(C) 2025 Frank Willeke</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
@@ -27,6 +27,12 @@
                     default="Berlin" 
                     label="MOD_WETTERONLINE_FIELD_LOCATION_LABEL" 
                     description="MOD_WETTERONLINE_FIELD_LOCATION_DESC" />
+                <field 
+                    name="gid" 
+                    type="text" 
+                    default="10382" 
+                    label="MOD_WETTERONLINE_FIELD_GID_LABEL" 
+                    description="MOD_WETTERONLINE_FIELD_GID_DESC" />
                 <field 
                     name="width" 
                     type="list" 

@@ -18,6 +18,7 @@ $location = $params->get('location', 'Berlin');
 $width    = $params->get('width', '100%');
 $height   = $params->get('height', '100');
 $showcredits = $params->get('showcredits', 0);
+$gid      = $params->get('gid', '10382');
 
 // Create a SEO-friendly version of the location (lowercase, replacing spaces with hyphens)
 // The preg_replace below converts one or more whitespace characters into a single hyphen.
@@ -31,7 +32,7 @@ $seourl = preg_replace("/\s+/", "-", $seourl);
         height="<?php echo htmlspecialchars($height, ENT_QUOTES, 'UTF-8'); ?>"
         name="CW1"
         style="border:1px solid;border-radius:10px;border-color:transparent;padding:0;margin:0;"
-        src="https://api.wetteronline.de/wetterwidget?gid=10382&modeid=CW1&seourl=<?php echo urlencode($seourl); ?>&locationname=<?php echo urlencode($location); ?>&lang=de">
+        src="https://api.wetteronline.de/wetterwidget?gid=<?php echo urlencode($gid); ?>&seourl=<?php echo urlencode($seourl); ?>&locationname=<?php echo urlencode($location); ?>&lang=de">
     </iframe>
     <?php if ($showcredits) { ?><small><?php echo JText::_('MOD_WETTERONLINE_CREDITS'); ?></small><?php } ?>
 </div>
