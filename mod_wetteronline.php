@@ -19,7 +19,7 @@ $width    = $params->get('width', '100%');
 $height   = $params->get('height', '100');
 $showcredits = $params->get('showcredits', 0);
 $gid      = $params->get('gid', '10382');
-$widgetstyle    = $params->get('widgetstyle', 'border:1px solid;border-radius:10px;border-color:transparent;');
+$widgetstyle = $params->get('widgetstyle', 'border:1px solid;border-radius:10px;border-color:transparent;');
 
 // Make sure $style ends with a semicolon
 if (substr($widgetstyle, -1) !== ';')
