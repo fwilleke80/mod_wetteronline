@@ -2,7 +2,8 @@
 <extension type="module" version="5.0" client="site" method="upgrade">
     <name>MOD_WETTERONLINE</name>
     <author>Frank Willeke</author>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
+    <targetplatform name="joomla" version="5\.0|6\.0" />
     <creationDate>8. April 2025</creationDate>
     <copyright>(c) 2025 Frank Willeke</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
